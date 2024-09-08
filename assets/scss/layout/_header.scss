@@ -1,0 +1,35 @@
+.nav-bg-shadow{
+  box-shadow: 0px 2px 40px 0px #0068FF1A;
+}
+.dropdown-toggle{
+  display: flex;
+  align-items: center;
+  &::after{
+    content: "\e313";
+    font-family: "Material Symbols Outlined";
+    border: none;
+  }
+}
+.dropright-toggle{
+  display: flex;
+  align-items: center;
+  &::after{
+    content: "\e315";
+    font-family: "Material Symbols Outlined";
+    border: none;
+  }
+}
+
+@media(min-width: 375px){
+  .logo-sm-w{
+    width: 125px;
+  }
+}
+@media(min-width: 992px){
+  .logo-lg-w{
+    width: 200px;
+  }
+  .w-425{
+    width:425px;
+  }
+}

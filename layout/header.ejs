@@ -1,0 +1,229 @@
+<nav class="container navbar navbar-expand-lg  pt-lg-10 pb-lg-6">
+    <div class="container-fluid p-5 py-lg-6 px-lg-10 bg-white nav-bg-shadow rounded-pill ">
+      <div class="d-flex align-items-center justify-content-between w-100">
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand me-8" href="#"><img src="../assets/images/logo.png" alt="logo" class=" logo-sm-w logo-lg-w"></a>
+            <div class="d-none d-lg-flex align-items-center justify-content-between">
+              <ul class="navbar-nav position-relative">
+                <!-- 第一層選單 -->
+                <li class="nav-item active">
+                  <a class="nav-link px-8 dropdown-toggle" href="#" role="button" id="first-menu-toggle">
+                    探索</a>
+                  <ul id="first-menu" class=" dropdown-menu p-5 border border-start-0 border-top-0 border-bottom-0 rounded-3 rounded-end-0 bg-gray-10 position-absolute" style="top: 80px; width: 232px; height: calc(100vh - 200px); overflow: scroll;">
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 mb-3 rounded-3" href="#">探索全部</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">音樂</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">攝影</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">程式</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">藝術</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">人文</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">行銷</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">投資理財</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">心靈成長</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">職場技能</a></li>
+                    <li><a class="first-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">生活品味</a></li>
+                  </ul>
+                </li>
+                <!-- 第二層選單 -->
+                <div id="second-menu" class="dropdown-menu p-5 bg-white rounded-0 border border-start-0 border-top-0 border-bottom-0" style="width: 232px; display: none; position: absolute;right: -365px; top: 80px;overflow-y: scroll; height: calc(100vh - 200px);">
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 mb-3 rounded-3" href="#">探索全部</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">程式入門</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">網頁前端</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">網頁後端</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">網站架設</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">資訊安全</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">程式語言</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">遊戲開發</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">資料科學</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">人工智慧</a></li>
+                  <li><a class="second-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">量化分析</a></li>
+                </div>
+                <!-- 第三層選單 -->
+                <div id="third-menu"  class="dropdown-menu p-5 bg-gray-10 bg-white rounded-3 rounded-start-0 border border-start-0 border-top-0 border-bottom-0" style="width: 400px; display: none; position: absolute;right: -765px; top: 80px; overflow-y: scroll; height: calc(100vh - 200px);">
+                  <li>
+                    <a class="dropdown-item mb-6 p-0 fw-bold d-flex align-items-center justify-content-start" href="#">
+                      <img src="../assets/images/icons/ic_fire.png" alt="fire" width="24px" class="me-3">熱門網頁前端課程
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <div class="card mb-3 border-0" style="width: 100%;">
+                    <div class="row g-3 border-bottom">
+                    <div class="col-md-3 ">
+                    <img src="../assets/images/course-5.png" class="img-fluid rounded position-relative" alt="course-5" style="width: 100%;height: 100px;">
+                    <div class="img-badge position-absolute fs-2 text-alert-100 bg-alert-10 rounded-pill py-2 px-3 start-0 top-0 mt-2 ms-2">8 折</div>
+                    </div>
+                    <div class="col-md-9">
+                    <div class="card-body p-0 overflow-hidden mb-8">
+                    <p class="card-title fw-bold text-dark mb-6">小白也會！從零開始學習 Python 程式設計</p>
+                    <div class="row d-flex justify-content-between pb-6 border-bottom">
+                    <div class="col-6 card-name d-flex align-items-center">
+                    <img class="me-3" src="../assets/images/avatar-2.png" alt="avatar-2">
+                    <p class="text-gray-80">Kelly Hsu</p>
+                    </div>
+                    <div class="col-6 card-price d-flex flex-column align-items-end">
+                    <p class="text-primary-100 fw-bold">NT$ 2,480</p>
+                    <div class="fs-3 text-gray-60 text-decoration-line-through">NT$ 3,200</div>
+                    </div>
+                    </div>
+                    <div class="card-text d-flex justify-content-between py-3">
+                    <p class="text-gray-60">已有 420 位同學加入</p>
+                    <div class="card-start d-flex align-items-center justify-content-end">
+                    <svg class="me-2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F6BD2B"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                    <p class="text-dark">4.0 <span class="text-gray-60 ms-2">(333)</span></p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="card mb-3 border-0" style="width: 100%;">
+                    <div class="row g-3 border-bottom">
+                    <div class="col-md-3 ">
+                    <img src="../assets/images/course-5.png" class="img-fluid rounded position-relative" alt="course-5" style="width: 100%;height: 100px;">
+                    <div class="img-badge position-absolute fs-2 text-alert-100 bg-alert-10 rounded-pill py-2 px-3 start-0 top-0 mt-2 ms-2">8 折</div>
+                    </div>
+                    <div class="col-md-9">
+                    <div class="card-body p-0 overflow-hidden mb-8">
+                    <p class="card-title fw-bold text-dark mb-6">小白也會！從零開始學習 Python 程式設計</p>
+                    <div class="row d-flex justify-content-between pb-6 border-bottom">
+                    <div class="col-6 card-name d-flex align-items-center">
+                    <img class="me-3" src="../assets/images/avatar-2.png" alt="avatar-2">
+                    <p class="text-gray-80">Kelly Hsu</p>
+                    </div>
+                    <div class="col-6 card-price d-flex flex-column align-items-end">
+                    <p class="text-gray-60 fw-bold">已購買</p>
+                    <div class="fs-3 text-gray-60 text-decoration-line-through">NT$ 3,200</div>
+                    </div>
+                    </div>
+                    <div class="card-text d-flex justify-content-between py-3">
+                    <p class="text-gray-60">已有 420 位同學加入</p>
+                    <div class="card-start d-flex align-items-center justify-content-end">
+                    <svg class="me-2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F6BD2B"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                    <p class="text-dark">4.0 <span class="text-gray-60 ms-2">(333)</span></p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="card mb-3 border-0" style="width: 100%;">
+                    <div class="row g-3 ">
+                    <div class="col-md-3 ">
+                    <img src="../assets/images/course-5.png" class="img-fluid rounded position-relative" alt="course-5" style="width: 100%;height: 100px;">
+                    <div class="img-badge position-absolute fs-2 text-alert-100 bg-alert-10 rounded-pill py-2 px-3 start-0 top-0 mt-2 ms-2">8 折</div>
+                    </div>
+                    <div class="col-md-9">
+                    <div class="card-body p-0 overflow-hidden mb-8">
+                    <p class="card-title fw-bold text-dark mb-6">小白也會！從零開始學習 Python 程式設計</p>
+                    <div class="row d-flex justify-content-between pb-6 border-bottom">
+                    <div class="col-6 card-name d-flex align-items-center">
+                    <img class="me-3" src="../assets/images/avatar-2.png" alt="avatar-2">
+                    <p class="text-gray-80">Kelly Hsu</p>
+                    </div>
+                    <div class="col-6 card-price d-flex flex-column align-items-end">
+                    <p class="text-primary-100 fw-bold">NT$ 2,480</p>
+                    <div class="fs-3 text-gray-60 text-decoration-line-through">NT$ 3,200</div>
+                    </div>
+                    </div>
+                    <div class="card-text d-flex justify-content-between py-3">
+                    <p class="text-gray-60">已有 420 位同學加入</p>
+                    <div class="card-start d-flex align-items-center justify-content-end">
+                    <svg class="me-2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F6BD2B"><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"/></svg>
+                    <p class="text-dark">4.0 <span class="text-gray-60 ms-2">(333)</span></p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </li>
+                  <!-- 可以根據需求加入其他內容 -->
+                </div>
+              </ul>
+                <form class="d-flex align-items-center position-relative" role="search"> 
+                  <span class="material-symbols-outlined ms-3 text-dark position-absolute start-0 top-50 translate-middle-y">search</span>
+                  <input class="form-control border px-10 border-1 rounded-4 py-7 w-425" type="search" placeholder="搜尋各種音樂、數學、程式及設計課程" aria-label="Search">
+                  <button class="btn btn-sm btn-primary-100 py-5 px-6 ms-10 me-3 rounded-3 position-absolute end-0 top-50 translate-middle-y" type="submit">搜尋</button>
+                </form>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end ">
+            <ul class="navbar-nav justify-content-end flex-nowrap align-items-center">
+                <div class="d-flex ms-auto">
+                    <li class="nav-item me-lg-6">
+                      <button type="button" class="btn position-relative p-0">
+                        <a class="nav-link active" aria-current="page" href="#"><span class="material-symbols-outlined d-flex align-items-center">
+                          notifications
+                          </span></a>
+                        <span class="position-absolute bg-primary-100 top-0 start-100 translate-middle p-2 border border-light rounded-circle">
+                         <span class="visually-hidden">New alerts</span>
+                        </span>
+                      </button>
+                        
+                      </li>
+                      <li class="nav-item me-lg-6">
+                        <button type="button" class="btn position-relative p-0">
+                          <a class="nav-link py-3 px-5" href="./cards.html"><span class="material-symbols-outlined d-flex align-items-center">
+                            shopping_cart
+                            </span></a>
+                          <span class="position-absolute top-10 start-20 translate-middle badge rounded-pill bg-primary-100">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </button>
+                        
+                      </li>
+                </div>
+                
+                <li class="nav-item d-none d-lg-flex">
+                    <a class="btn btn-sm btn-primary-100 py-6 px-9 rounded-3" href="#" role="button">登入 / 註冊</a>
+                </li>
+              </ul>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="first-menu-toggle">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end py-6 px-8" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header py-5 px-8 mb-3">
+                  <p class="offcanvas-title" id="offcanvasNavbarLabel">探索全部</p>
+                  <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                </div>
+                <div class="offcanvas-body d-lg-none p-0" id="first-small-menu-toggle">
+                  <!-- 第一層選單 -->
+                  <ul class="p-0" id="first-small-menu">
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">音樂</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">攝影</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">程式</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">藝術</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">人文</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">行銷</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">投資理財</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">心靈成長</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">職場技能</a></li>
+                    <li><a class="first-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#">生活品味</a></li>
+                  </ul>
+                  <!-- 第二層選單 -->
+                <!-- <ul id="second-small-menu" class="p-0">
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 mb-3 rounded-3" href="#">探索全部</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">程式入門</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">網頁前端</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">網頁後端</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">網站架設</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">資訊安全</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">程式語言</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">遊戲開發</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">資料科學</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">人工智慧</a></li>
+                  <li><a class="second-small-menu-item dropdown-item py-5 px-8 rounded-3 dropright-toggle justify-content-between d-flex" href="#" id="show-third-menu">量化分析</a></li>
+                </ul> -->
+                  <div class="pt-5 border-top position-absolute start-0 bottom-0 bg-white w-100 px-8">
+                    <a class=" btn btn-primary-100 py-6 text-center rounded-3 border-top w-100" href="#" role="button">登入 / 註冊</a>
+                  </div>
+                </div>
+                
+              </div>
+              
+          </div>
+      </div>
+      
+    </div>
+  </nav>
