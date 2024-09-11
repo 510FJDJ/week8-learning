@@ -5,32 +5,54 @@ html,
     body {
       position: relative;
       height: 100%;
+      overflow-x: hidden;
     }
-.swiper {
+.banner .swiper {
   width: 100%;
   height: calc(100vh - 170px);
 }
-.swiper-slide {
+
+.banner .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-
-.swiper-wrapper img ,.swiper-slide img {
+.swiper-flower{
+  &::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 720px;
+    height: 720px;
+    left:-250px;
+    top:-350px;
+    z-index: 2;
+    background-image:url('../images/deco/flower-4.png');
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    @media (max-width:990px){
+      background-image:none;
+  }
+}
+}
+.banner .swiper-wrapper img ,.banner .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
   @media (min-width:992px){
     border-radius: 80px;
-    width: 96%;
+    width: 100%;
   }
 }
 
 .arrow-shadow{
   box-shadow: 0px 10px 15px -3px #0000001A;
+}
+.card-shadow{
+  box-shadow: 0px 25px 50px -12px #0000001F;
 }
 .swiper-pagination-custom{
   position: absolute;
@@ -45,26 +67,73 @@ html,
   transform: translateY(-50%); 
 }
 .swiper-prev {
-  left: 6.5%; /* Adjust this value as needed */
+  left: 5%; /* Adjust this value as needed */
 }
-
 .swiper-next {
-  right: 6.5%; /* Adjust this value as needed */
+  right: 5%; /* Adjust this value as needed */
 }
-.swiper-slide-next::before,.swiper-slide-prev::before{
+.banner .swiper-slide-next::before,.banner .swiper-slide-prev::before{
   @media (min-width:992px){
     content: '';
   position: absolute;
   top: 0;
-  left: 2%;
-  width: 96%;
+  left: 0%;
+  width: 100%;
   height: 100%;
   background-color: rgba(237, 237, 237, 0.7); /* Gray color with transparency */
   border-radius: 80px; /* Match the border-radius of the image */
   z-index: 1; 
+  
   }
 }
-
+.banner .swiper-slide-active{
+  @media (min-width:992px){
+    border-radius: 80px;
+  }
+}
+.swiper-pagination-bullet-active{
+  width:24px;
+  height: 8px;
+  border-radius: 10px;
+}
+.flower-1-pose{
+  position: relative;
+  z-index: 1;
+  &::before{
+    content: "";
+    position: absolute;
+    display: block;
+    left: -20px;
+    top:-20px;
+    width: 60px;
+    height: 60px;
+    background-image:url('../images/deco/flower-1.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+  }
+}
+.teacher{
+  position: relative;
+  z-index: 1;
+  &::before{
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    left:-100px;
+    top:200px;
+    width:2000px;
+    height:452px;
+    background-image: url('/assets/images/deco/line-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+}
+.bg-buy-shadow{
+  background: linear-gradient(180deg, #F0F6FF 0%, #FFFFFF 100%);
+}
 .swiper-img-bluetext{
   position: absolute;
   bottom: 0px;
@@ -78,7 +147,7 @@ html,
   
   @media (min-width:992px){
     border-radius: 0px 100px 0px 80px;
-    left:2%;
+    left:0%;
     width: auto;
     bottom: 0px !important;
   }
@@ -94,6 +163,23 @@ html,
     bottom: 144px;
   }
 }
+@media (max-width: 991.98px){
+  .learn .row-cols-4 {
+    display: flex;
+    overflow-x: scroll;  
+    flex-wrap: nowrap;   
+    scrollbar-color: white #ffffff; /* 設置滾動條顏色（滾動條本體 顏色/軌道 顏色） */
+  }
+  
+  .learn .col {
+    flex: 0 0 25%;
+    min-width: 220px; /* 設置按鈕的最小寬度，視需求調整 */
+    max-width: 25%; 
+    white-space: nowrap; /* 禁止內容換行 */
+  }
+}
+
+
 
 @media (min-width: 375px) {
   .fs-1-sm{
