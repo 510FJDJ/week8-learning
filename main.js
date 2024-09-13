@@ -8,10 +8,10 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 40,
       centeredSlides: true,
       cssMode: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false
+      // },
       navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",

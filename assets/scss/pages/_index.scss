@@ -157,6 +157,7 @@ html,
   position: absolute;
   bottom: 90px;
   left: 50%;
+  max-width: 90%;
   transform: translateX(-50%);
   @media (min-width:992px){
     left: 0px;
