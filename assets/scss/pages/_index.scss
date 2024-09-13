@@ -162,6 +162,7 @@ html,
     left: 0px;
     transform: translateX(10%);
     bottom: 144px;
+    margin: 0px;
   }
 }
 @media (max-width: 991.98px){
@@ -182,9 +183,12 @@ html,
 
 
 
-@media (min-width: 375px) {
+@media (min-width: 300px) {
   .fs-1-sm{
     font-size: 14px;
+  }
+  .h-400{
+    height: 400px;
   }
 }
 @media (min-width: 992px) {
