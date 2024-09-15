@@ -701,8 +701,8 @@
           </div>
       </div>
     </section>
-    <section class="learn py-lg-12 py-10">
-      <div class="bg-primary-100 rounded-5" style="max-width: 1656px;">
+    <section class="learn py-lg-12 py-10 d-flex justify-content-center">
+      <div class="bg-primary-100 rounded-5 px-12" style="max-width: 1656px;">
         <div class="container py-11">
           <div class="row flex-column-reverse flex-lg-row justify-content-between align-items-center">
             <div class="col-lg-6">
@@ -1012,6 +1012,23 @@
           }
       });
     </script>
+    <script>
+      // 移除 data-aos-delay 和 data-aos-duration 屬性
+document.querySelectorAll('[data-aos]').forEach((element) => {
+  // 移除 data-aos-delay 屬性
+  if (element.hasAttribute('data-aos-delay')) {
+    element.removeAttribute('data-aos-delay');
+  }
+  
+  // 移除 data-aos-duration 屬性
+  if (element.hasAttribute('data-aos-duration')) {
+    element.removeAttribute('data-aos-duration');
+  }
 
+  // 如果需要，你可以在這裡重新加入 animate.css 的 class
+  element.classList.add('animate__animated');
+});
+
+    </script>
   </body>
 </html>
