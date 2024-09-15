@@ -82,11 +82,11 @@ const swiper3 = new Swiper(".buySwiper", {
     },
 });
 
+      AOS.init({
+      useClassNames: true,
+      initClassName: false,
+      animatedClassName: 'animate__animated',
+      duration:4000
+    });
 
-AOS.init({
-  useClassNames: true,
-  initClassName: false,
-  animatedClassName: 'animate__animated',
-  duration:4000
-});
 console.log("Hello world!");
