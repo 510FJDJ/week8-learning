@@ -81,12 +81,16 @@ const swiper3 = new Swiper(".buySwiper", {
       dynamicBullets: true,
     },
 });
-
-      AOS.init({
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    AOS.init({
+      // 效果配置（可不寫）
       useClassNames: true,
       initClassName: false,
       animatedClassName: 'animate__animated',
-      duration:4000
+      duration:100,
     });
+  }, 2000); // 添加一段小延遲
+});
 
 console.log("Hello world!");
