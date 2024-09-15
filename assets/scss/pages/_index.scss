@@ -182,16 +182,30 @@ html,
   }
 }
 
-
+@media(max-width:991px){
+  .h-400{
+    height: 400px;
+  }
+  .w-sm-100{
+    width: 100%;
+  }
+}
 
 @media (min-width: 300px) {
   .fs-1-sm{
     font-size: 14px;
   }
+}
+
+@media(max-width:991px){
   .h-400{
     height: 400px;
   }
+  .w-sm-100{
+    width: 100%;
+  }
 }
+
 @media (min-width: 992px) {
   .h6-lg{
     font-size: 20px;

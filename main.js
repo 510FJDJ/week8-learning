@@ -19,7 +19,14 @@ const swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",
       },
-      
+      breakpoints: {
+        992: {
+          slidesPerView: 1.15, // 較大螢幕的設置
+        },
+        0: {
+          slidesPerView: 1, // 手機版的設置，顯示一個內容
+        },
+      },
     });
 
  const swiper2 = new Swiper(".classSwiper", {
