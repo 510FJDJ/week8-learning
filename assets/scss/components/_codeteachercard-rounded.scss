@@ -1,0 +1,43 @@
+.codeteachercard-rounded{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $gray-400;
+    border-radius: 12px;
+    .codeteachercard-rounded-img{
+        width:100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    .codeteachercard-rounded-body{
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+        background-color: white;
+    //客製化樣式
+    &.codeteachercard-rounded-border-bottom-gray{
+        border-bottom: 1px solid $gray-400;
+    }
+    }
+    .codeteachercard-rounded-title{
+        margin-bottom: 4px;
+        font-weight: 600;
+        color: $black;
+    }
+    .codeteachercard-rounded-subtitle{
+        font-size: 14px;
+    }
+    .codeteachercard-rounded-footer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 16px;
+        background-color: white;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .codeteachercard-rounded-footer-text-start{
+        font-size: 14px;
+    }
+    
+}

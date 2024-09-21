@@ -1,0 +1,141 @@
+//hero
+.hero{
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    ::before{
+        content: "";
+        position:absolute;
+        display: block;
+        width:560px;
+        height: 560px;
+        top:-100px;
+        left:-50px;
+        background-image: url('/assets/images/deco/flower-2.png');
+        z-index: -1;
+        @media (max-width:1200px){
+            display: none;
+        }
+    }
+    ::after{
+        content: "";
+        position:absolute;
+        display: block;
+        top:80px;
+        left:150px;
+        width: 40px;
+        height:40px;
+        background-image: url('/assets/images/deco/polygon-2.png');
+        background-size: cover;
+        z-index: -1;
+        @media (max-width:1200px){
+            display: none;
+        }
+    }
+    &.flipped::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 560px;
+        height: 560px;
+        bottom: -300px;
+        right: -100px; 
+        background-image: url('/assets/images/deco/flower-2.png');
+        z-index: -1;
+        @media (max-width:1200px){
+        top: 5px;
+        right: -350px;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        }
+    }
+    &.flipped::after{
+        content: "";
+        position:absolute;
+        display: block;
+        top:40px;
+        right:15%;
+        width: 40px;
+        height:40px;
+        background-image: url('/assets/images/deco/polygon-2.png');
+        background-size: cover;
+        z-index: -1;
+        @media (max-width:1200px){
+            top: 40px;
+            left: 15px;
+            background-repeat: no-repeat;
+            }
+    }
+}
+
+//section2
+.nav-underline .nav-link {
+    display: inline-block; /* 讓元素寬度根據內容自適應，並保持居中 */
+    white-space: nowrap; /* 防止文字換行 */
+    text-align: center; /* 文字置中 */
+    
+    transform: translateX(-50%); /* 讓底線相對於中點居中 */
+    width: 70%; /* 底線的寬度，可以根據需求調整 */
+  }
+
+    .swiper5 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-pagination-custom{
+        position: absolute;
+        width: 100%;
+        top: 0px;
+      }
+      .swiper-pagination-codeclass {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width: 100%;
+      }
+    .swiper-next-hot:active,.swiper-prev-hot:active{
+        color: $primary-100;
+    }
+/* Webkit 瀏覽器的滾動條樣式 */
+#scrollContainer::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  #scrollContainer::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  #scrollContainer::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  /* Firefox 的滾動條樣式 */
+  #scrollContainer {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+@media (min-width: 992px){
+    .h1-lg{
+        font-size:48px;
+    }
+    .h3-lg{
+      font-size: 32px;
+    }
+    .h2-lg{
+      font-size: 40px;
+    }
+    .h6-lg{
+      font-size: 20px;
+  }
+}

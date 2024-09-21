@@ -1,0 +1,18 @@
+.iconstar-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .iconstar-img{
+        margin-right: 4.5px;
+    }
+    .iconstar-warning{
+        color:$yellow-500;
+    }
+    .iconstar-text{
+        color:$black;
+        font-size: 14px;
+    }
+    .iconstar-text-gray{
+        color:$gray-600;
+    }
+}

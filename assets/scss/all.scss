@@ -7,16 +7,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
 
-// :root {
-//   --animate-duration: 4000ms;
-//   --animate-delay: 5.9s;
-// }
-
+//base
 @import "./base/_base";
+
+// layout
 @import "./layout/header";
 @import "./layout/footer";
+
+// components
+@import "./components/codeteachercard-rounded";
+@import "./components/iconstar";
+@import "./components/avater";
+@import "./components/card-rounded";
+@import "./components/btn2";
+
+// pages
 @import "./pages/index";
 @import "./pages/cards";
+@import "./pages/jessica";
+@import "./pages/codeclass";
 
 .btn-default-secondary {
     //     @mixin button-outline-variant(
@@ -26,15 +35,19 @@
 //   $active-border: $color,
 //   $active-color: color-contrast($active-background)
 // )
-    @include button-outline-variant($primary-100, white, $primary-100, transparent, white);
-  
-    // 自定義 disabled 狀態
-    &:disabled {
-      --#{$prefix}btn-disabled-color: $gray-60;       // 禁用文字顏色
-      --#{$prefix}btn-disabled-bg: $gray-40;       // 禁用背景顏色
-      --#{$prefix}btn-disabled-border-color: transparent; // 禁用邊框顏色
-    }
-  }
+@include button-outline-variant($gray-400, white, $primary-100, transparent, white);
+&{
+  --#{$prefix}btn-color: $gray-800;
+}
+&:active{
+  --#{$prefix}btn-active-color:$white;
+}
+// 自定義 disabled 狀態
+&:disabled {
+  --#{$prefix}btn-disabled-color: $gray-60;       // 禁用文字顏色
+  --#{$prefix}btn-disabled-bg: $gray-40;       // 禁用背景顏色
+  --#{$prefix}btn-disabled-border-color: transparent; // 禁用邊框顏色
+}}
 
 .btn-default-primary{
     @include button-variant(

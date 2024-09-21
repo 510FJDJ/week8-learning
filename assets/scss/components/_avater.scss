@@ -1,0 +1,12 @@
+.avater-wrapper{
+    display: flex;
+    align-items: center;
+    .avater{
+        border-radius: 50px;
+        margin-right: 8px;
+    }
+    .avater-md{
+        width: 32px;
+        height:32px;
+    }
+}

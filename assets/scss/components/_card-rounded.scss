@@ -1,0 +1,70 @@
+.card-rounded{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 25px 50px -12px #0000001F;
+    border-radius: 20px;
+    height: 100%;
+    .card-rounded-wrapper{
+        position: relative;
+    }
+    .card-rounded-img{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .card-rounded-badge{
+        position: absolute;
+        top:16px;
+        left:16px;
+        padding: 8px 12px 8px 12px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 100px;
+    }
+    .card-rounded-body{
+        height: 100%;
+        padding: 16px;
+        border-bottom: 1px solid $gray-400;
+    }
+    .card-rounded-title{
+        text-align: start;
+        margin-bottom: 16px;
+    }
+    .card-rounded-middle{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-rounded-price{
+        text-align: end;
+    }
+    .card-rounded-price-subtitle{
+        font-size: 14px;
+        text-decoration:line-through;
+    }
+    .card-rounded-footer{
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .card-rounded-start{
+        text-align: start;
+    }
+    .card-rounded-badge-disable{
+        padding: 4px 12px 4px 12px;
+        border-radius: 100px;
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+    .card-rounded-text{
+        font-size:14px;
+    }
+
+    &:hover{
+       transform: translate(-10px,-10px);
+       box-shadow: 0px 0px 40px -10px $primary-100;
+       transition-duration: .3s;
+    }
+}
