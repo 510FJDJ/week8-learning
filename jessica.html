@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" id="index-html">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>Jessica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <script type="module" crossorigin src="/week8-learning/assets/main-87037307.js"></script>
     <link rel="stylesheet" href="/week8-learning/assets/main-e352474e.css">
   </head>
-  <body >
+  <body>
     <nav class=" navbar navbar-expand-lg  pt-lg-10 pb-lg-6 p-0">
     <div class="container-fluid p-5 py-lg-6 px-lg-10 bg-white nav-bg-shadow nav-rounded" style="max-width:1296px ;">
       <div class="d-flex align-items-center justify-content-between w-100">
@@ -171,9 +174,7 @@
                 <div class="d-flex ms-auto">
                     <li class="nav-item me-lg-6">
                       <button type="button" class="btn position-relative p-0">
-                        <a class="nav-link active" aria-current="page" href="#"><span class="material-symbols-outlined d-flex align-items-center">
-                          notifications
-                          </span></a>
+                        <a class="nav-link active" aria-current="page" href="#"><span class="material-symbols-outlined d-flex align-items-center">notifications</span></a>
                         <span class="position-absolute translate-middle-y bg-primary-100 top-20 start-70 translate-middle p-2 border border-light rounded-circle">
                          <span class="visually-hidden">New alerts</span>
                         </span>
@@ -187,8 +188,9 @@
                         </button>
                       </li>
                 </div>
-                <li class="nav-item d-none d-lg-flex">
-                    <a class="btn btn-sm btn-primary-100 py-6 px-9 rounded-3" href="./login.html" role="button">登入 / 註冊</a>
+                <li class="nav-item d-none d-lg-flex align-items-center">
+                    <img src="/week8-learning/assets/avatar-1-cf59f6fa.png" alt="avatar-1" class="me-3" style="width: 44px;"/>
+                    <p class="text-gray-80">Jessica</p>
                 </li>
             </ul>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="first-menu-toggle">
@@ -474,59 +476,216 @@
       </div>
       
     </div>
-  </nav>     <section class="py-10">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-5 d-none d-lg-block">
-            <img src="/week8-learning/assets/login-ad5387e3.png" alt="login" style="max-width: 728px;" class="w-100">
-          </div>
-          <div class="col-lg-7 col-12">
-            <div class="row">
-              <div class="col-lg-6 col-12 mx-auto">
-                <div class="h3 h1-lg text-dark mb-8 mb-lg-10">歡迎回來！</div>
-                <div class="d-flex flex-column mb-8 mb-lg-10">
-                  <a  href="./jessica.html" role="button" class="btn btn-outline-gray-40 text-gray-80 rounded-3 py-6 px-9 mb-6 d-flex justify-content-between">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARdSURBVHgB7ZnPbxtFFMe/s94kOOWHC+JHw4HtpVKE0rQICaEKsuGCEK1w4MgBR71wIu6BShxQ7QMHyqGOkBASEsofgIiDcm43FAlucZo7WakIV22lumndX/Hu9M3WSVPv7O7sehO3qj/SyKvx7Ox7b96beTMD9OnzdMOQEtyECQeH6HGCivjNtYugQV+ywakwrECDxSxYSIGuFCChc3AxQ4IV8VBYVWwqFjIokzI2EpJIgbbgp9qCp8FcUkViK8Df9yxeQnyLR2FTKbPzpEwMYilAwp9J0epyGErsT5TVmyvguYyDeXo0sRtkMEXuVFVpqqk0wl7qbreE514sKAkviFTAc5urfBy7gRD+Ly++lAlVgL+HQkyfbwghqEySG+yngGSi0PNer45hFgiYaRIILwiMAfJ7g/z+HD0aiEYsUtMkgKXQ9oFhQNPwZt8JhRcEK/CxNod19wtESkNW1WnmsMj6MWhPDBWxOicVXiBVgJ97xoDG13C2BZx1gt/uwnJpIY8BzS15vx/owGe6mIX8bcjyvRZeEBDEbGLr8XAGOD4ACsntDWzhNngM8ClA7mOiM3BzJPzxQRqRzGZNOa7P7xS6v8o1A2NbuNSBjM0+vzeHxwS/Aho7FPrGCFtADPadvMCRDjZnsC59f3B6e6UsBt5AKI7yMp8yBuP+dEaiADcQyrM19A5fCi9RgIXm+Wyy0cvgVVHgyULmQqEW9lbp3uGTTeZCES7SMtAzmN1ZI3OhFYSimegRnPtHwL8OuJQSa/hE1sFlN4sfm2MzwPkSFKmfPqi876Y1Yw1h6TtzlzqrZC4knSZXWy/im/V3UNt4KXdsPl9Ayrz29YUCovYermt1VsnT6aXBa9un0z/uGvilOfrwf1oVm5TmWVPVVKbUXHEtlx28sYxwBWwazf2dlfJp1NXE1g9NPoDvbr71iPAC0tp4DrRXTons4HoFEdYXaYSsPmAduFP513keX10/gn/uvSrvECgcnc+fQpeMnFylPlj0zo850rOiwAArLHxYuepmZxDVL1C5Qel1XHfKz+dzq6tfnrl1c6QQ1ZasP9eZxG0SuBI33GwJiM75aSSKe4DlOIF97Ld8foPeGR37ufDKvr9D2zLvZNsph/wfzLeLR4rLGy8r+7oIbsoYF2izXtV11KrtUSFrG60W+bjuHb37TrL//28S9YuTQb2eqJ8eryCJAoKjv+cr1CrSlbrlcv1dXLQ/erSSs9n6D2Oh51KRydzip9XiC5m7FnYY4Uqj4z9haGjLa1du72mVot5TykabztDU63pzx/cBw8OXcODNX6EP3LJuDztmo3Q4MgZjHa/vijvRcY0YddXmsfYDomPSeJoj+ZVQCI23B66ciCO8INEVk5hVHLqlofk5egFSgayu08VGNUFq0tUl36YiLsMEUzsE3o4QdpbS4Uq1i5wqtWtWSitMSsVNOkofJ4saeKDQ1jUruV2DMdQop1+ij9YWp6oW+vTp0zX3AUlCZA2g5KQhAAAAAElFTkSuQmCC" alt="ic_google" width="24px"/>
-                    <p class="w-100 text-center">使用 Google 帳號登入</p>
-                  </a>
-                  <a  href="./jessica.html" role="button" class="btn btn-outline-gray-40 text-gray-80 rounded-3 py-6 px-9 mb-6 d-flex justify-content-between">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIJSURBVHgB7ZrNSwJBFMCfZhqmYGRgXfSgRYegyFOQeQq9heGpgvZSEIF46w8Qunq0k968Bh08FknnvAXmwS4lKST4UX7NtrOhGLq62bbjxP5gkZkdZH7OzHtvWQEoR9XdcB9GTVBv2EDdMsG4oplK3cSYYrvZEXDtRwIsgjDQAIuCyfgJP1deAP/yrXrtDShiQqubwSuh5lvNj1WgjQq31TnUQClN3dc5pVagDfUCGiCIw2oGu3UWLGZDp69crXFXg7vqcP/wDOVKbeB3EBHwe1bA41rkBQYRCF3xEoOQVcA4rYNQcBvWlhdAKmQ9A2dHbkknj5FNwMttmU2nDaRGNgHG54S/QJYzgA+rZc44cMxLvgS5QulbH45Ew5BFoDtM9kNMtBFCli2EY70Qidv0yJPHEM/EmacC/AbiAsMy7TCUYo40SjXajYOLNqcHGz3982bhHOD3coXd1lLfezi8DkNSAYNe9+Naxy5QkYpJYpix3UKPWXHhdWwFyu+Ur0CG9hXI5Uuixo2vQKEsapykUQgXZa69i55+xrcOzG7/54HzyDUkkmkYFSUTk0YRII0iQBpFgDSKAGkUAdL8D4E6migCpfACWu1kFihDo5lK4U9eAL/xRqwqCJSAWBRs/1+i80BzFz8Ou3eisaZB+rf2Klb43muhAqyaBTEghIraqj6bvGSo3fI9fAIcwJca2vX6AAAAAABJRU5ErkJggg==" alt="ic_facebook" width="24px"/>
-                    <p class="w-100 text-center">使用 Facebook 帳號登入</p>
-                  </a>
-                  <a href="./jessica.html" role="button" class="btn btn-outline-gray-40 text-gray-80 rounded-3 py-6 px-9 mb-6 d-flex justify-content-between">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH0SURBVHgB7ZrPTcMwFMZ/wIVjN8AbABOQK7eOkA0KE7QbABOUDYAJAhO0R24JExQmCHlKqpaSfyZOXizxkz6pqmz1ey9+tmMX/tHlCB0mmWaZguLzJR4hxjeZ0kIxniCZjtgZ3yrCE8rMi+7xgDnl5kWGkWOoNr/EAxaUm5fiNXjAit/mZRa6wBPKMu+NeWE/6wvy6dQZXVfiCTtDn4UOCTIlhfYx/KyBdUV/54hhmRbLxrZ8F1JdnAH5vL+hvLCb+ndmVvPjh3oqzEypDrhKcdHXGVXbgL41xxFrGNx8qyCOaeYu0zl6fNEBg17mnSx2j4BWAFM6YgAt80scEAKpkgwOeAY0zC+xoG4WOkOHN5vGdQEYdEhsGtcF4HTXaEFi07jNQjY0xqZxXQCDbG1LMDaNxxjAFY7QmkZlC9G6/uqeQIIOYv4GB4ToPIGtOm/kJoBmADEO1qIISBUl9RDSgQWQjkAr/oj2MGoMoGkllrXgFX0e6ECAbvZjHBABqZJCHGAADfNxk7ET2iG1IOeoAcNyS34m5YyI4bLfy92Zof3ZaNeh09sLVQC9mze0pG0N7JNk+qD54EnayZb8hfxFXerolPrMSpvrTO8MgCHP1n72ZHjJsXpQ0y+k+sLbYImL/0oExQ8n2N2yyJPYbpkHu50ZHd8CMMjgAn6PxAAAAABJRU5ErkJggg==" alt="ic_apple" width="24px"/>
-                    <p class="w-100 text-center">使用 Apple 帳號登入</p>
-                  </a>
-                </div>
-                <div class="flex-column mb-8 mb-lg-10">
-                  <p class=" fw-bold text-dark mb-6">或使用 Learning 帳號登入</p>
-                  <div class="mb-6">
-                    <label for="exampleFormControlInput1" class="form-label mb-3 text-gray-80">電子信箱<span class="text-alert-100">*</span></label>
-                    <input type="email" class="form-control rounded-3 p-6 text-dark" id="exampleFormControlInput1" placeholder="請輸入電子信箱">
-                  </div>
-                  <div class="mb-3">
-                    <label for="secret" class="form-label mb-3 text-gray-80">密碼<span class="text-alert-100">*</span></label>
-                    <input type="password" class="form-control rounded-3 p-6 text-dark" id="secret" placeholder="請輸入密碼">
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                      <label class="form-check-label text-gray-80" for="flexCheckChecked">
-                        記住帳號
-                      </label>
-                    </div>
-                    <a class="text-gray-80" href="#">忘記密碼？</a>
-                  </div>
-                </div>
-                <a class="btn btn-primary-100 rounded-3 py-6 w-100 mb-8 mb-lg-10" href="./jessica.html" role="button">立即登入</a>
-                <p class="text-gray-80">沒有 Learning 帳號嗎？ <a href="./register.html"> <span class="text-primary-100 fw-bold text-decoration-underline">立即註冊</span></a></p>
+  </nav>    <section>
+      <div class="container py-lg-11 d-lg-flex d-none">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <div class=" align-items-center d-flex">
+            <img src="/week8-learning/assets/avatar-1-cf59f6fa.png" alt="avatar-1" style="width: 100px;" class="me-3 me-lg-8">
+            <div class="d-flex flex-column align-items-start">
+              <h3 class="h1-lg mb-lg-6">Jessica</h3>
+              <div class="d-flex justify-content-between">
+                <a class="btn2 active me-lg-6 d-flex align-items-center" href="#" role="button"><i class="bi bi-folder-fill me-3"></i>我的課程</a>
+                <a class="btn2  me-lg-6 d-flex align-items-center" href="#" role="button"><i class="bi bi-bookmark-fill me-3"></i>我的收藏</a>
+                <a class="btn2 d-flex align-items-center" href="#" role="button"><i class="bi bi-pen-fill me-3"></i>作品成果</a>
               </div>
             </div>
-            
+          </div>
+          <div class=" align-items-center justify-content-end d-flex">
+            <div class="d-flex flex-column align-items-center me-10">
+              <p class="text-gray-80 mb-2 ">我的課程</p>
+              <h1>4</h1>
+            </div>
+            <div class="d-flex flex-column align-items-center me-10">
+              <p class="text-gray-80 mb-2 ">我的收藏</p>
+              <h1>2</h1>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <p class="text-gray-80 mb-2 ">作品成果</p>
+              <h1>5</h1>
+            </div>
           </div>
         </div>
       </div>
-     </section>
+
+
+
+      <div class="container py-10 d-lg-none">
+        <div class="row">
+          <div class="col d-flex d-lg-none align-items-center flex-column mb-9">
+            <div class="d-flex align-items-center mb-8 w-100">
+              <img src="/week8-learning/assets/avatar-1-cf59f6fa.png" alt="avatar-1" style="width: 100px;" class="me-3 me-lg-8">
+              <h3 class="h1-lg mb-lg-6">Jessica</h3>
+            </div>
+            <div class="d-flex justify-content-between w-100">
+              <a class="btn2 active me-lg-6 d-flex align-items-center" href="#" role="button"><span class="material-symbols-outlined me-3">folder</span>我的課程</a>
+              <a class="btn2  me-lg-6 d-flex align-items-center" href="#" role="button"><i class="bi bi-bookmark-fill me-3"></i>我的收藏</a>
+              <a class="btn2 d-flex align-items-center" href="#" role="button"><i class="bi bi-pen-fill me-3"></i>作品成果</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex align-items-center justify-content-between">
+            <div class="d-flex flex-column align-items-center">
+              <p class="text-gray-80 mb-2">我的課程</p>
+              <h1>4</h1>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <p class="text-gray-80 mb-2">我的收藏</p>
+              <h1>2</h1>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <p class="text-gray-80 mb-2">作品成果</p>
+              <h1>5</h1>
+            </div>
+          </div>
+        </div>
+          
+        
+      </div>
+    </section>
+    <section class="session bg-white">
+      <div class="container py-10 pb-lg-11">
+        <ul class="nav nav-underline mb-10 mb-lg-11 ps-10">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">所有課程 (4)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">正在上課中</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">等待開課</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">已完課</a>
+          </li>
+        </ul>
+        <div class="row g-8 mb-10">
+          <div class="col-lg-3">
+           <div class="card-rounded">
+              <div class="card-rounded-wrapper">
+                <img src="/week8-learning/assets/course-5-18abd620.png" alt="course-5" class="card-rounded-img">
+                <div class="card-rounded-badge text-alert-100 bg-alert-10">限時 8 折 🔥</div>
+              </div>
+              <div class="card-rounded-body">
+                <h6 class="card-rounded-title">小白也會！從零開始學習 Python 程式設計</h6>
+                <div class="card-rounded-middle">
+                  <div class="avater-wrapper">
+                    <img src="/week8-learning/assets/avatar-2-469c3734.png" alt="avatar-2" class="avater avater-md">
+                    <p class="text-gray-80">Kelly Hsu</p>
+                  </div>
+                  <div class="card-rounded-price">
+                    <h6 class="card-rounded-price-title text-primary-100">NT$ 2,480</h6>
+                    <div class="card-rounded-price-subtitle text-gray-60">NT$ 3,200</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-rounded-footer">
+                <div class="card-rounded-start">
+                  <div class="card-rounded-badge-disable text-gray-70 bg-gray-40">程式開發</div>
+                  <div class="card-rounded-text">已有 420 位同學加入</div>
+                </div>
+                <div class="iconstar-wrapper">
+                  <i class="bi bi-star-fill iconstar-img iconstar-warning" ></i>
+                  <p class="iconstar-text">4.0 <span class="iconstar-text-gray">(333)</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card-rounded">
+               <div class="card-rounded-wrapper">
+                 <img src="/week8-learning/assets/course-6-cb21fd70.png" alt="course-6" class="card-rounded-img">
+                 <div class="card-rounded-badge text-alert-100 bg-alert-10">限時 8 折 🔥</div>
+               </div>
+               <div class="card-rounded-body">
+                 <h6 class="card-rounded-title">全面掌握 JavaScript 開發技術</h6>
+                 <div class="card-rounded-middle">
+                   <div class="avater-wrapper">
+                     <img src="/week8-learning/assets/avatar-2-469c3734.png" alt="avatar-2" class="avater avater-md">
+                     <p class="text-gray-80">Kelly Hsu</p>
+                   </div>
+                   <div class="card-rounded-price">
+                     <h6 class="card-rounded-price-title text-primary-100">NT$ 2,480</h6>
+                     <div class="card-rounded-price-subtitle text-gray-60">NT$ 3,200</div>
+                   </div>
+                 </div>
+               </div>
+               <div class="card-rounded-footer">
+                 <div class="card-rounded-start">
+                   <div class="card-rounded-badge-disable text-gray-70 bg-gray-40">程式開發</div>
+                   <div class="card-rounded-text">已有 420 位同學加入</div>
+                 </div>
+                 <div class="iconstar-wrapper">
+                   <i class="bi bi-star-fill iconstar-img iconstar-warning" ></i>
+                   <p class="iconstar-text">4.0 <span class="iconstar-text-gray">(333)</span></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-lg-3">
+            <div class="card-rounded">
+               <div class="card-rounded-wrapper">
+                 <img src="/week8-learning/assets/course-7-9e3876e4.png" alt="course-7" class="card-rounded-img">
+               </div>
+               <div class="card-rounded-body">
+                 <h6 class="card-rounded-title">HTML & CSS 網頁設計基礎教程</h6>
+                 <div class="card-rounded-middle">
+                   <div class="avater-wrapper">
+                     <img src="/week8-learning/assets/avatar-2-469c3734.png" alt="avatar-2" class="avater avater-md">
+                     <p class="text-gray-80">Kelly Hsu</p>
+                   </div>
+                   <div class="card-rounded-price">
+                     <h6 class="card-rounded-price-title text-primary-100">NT$ 2,480</h6>
+                     <div class="card-rounded-price-subtitle text-gray-60">NT$ 3,200</div>
+                   </div>
+                 </div>
+               </div>
+               <div class="card-rounded-footer">
+                 <div class="card-rounded-start">
+                   <div class="card-rounded-badge-disable text-gray-70 bg-gray-40">程式開發</div>
+                   <div class="card-rounded-text">已有 420 位同學加入</div>
+                 </div>
+                 <div class="iconstar-wrapper">
+                   <i class="bi bi-star-fill iconstar-img iconstar-warning" ></i>
+                   <p class="iconstar-text">4.0 <span class="iconstar-text-gray">(333)</span></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-lg-3">
+            <div class="card-rounded">
+               <div class="card-rounded-wrapper">
+                 <img src="/week8-learning/assets/course-8-651d7ef2.png" alt="course-8" class="card-rounded-img">
+               </div>
+               <div class="card-rounded-body">
+                 <h6 class="card-rounded-title">更進一步！深入學習 Node.js 與後端開發</h6>
+                 <div class="card-rounded-middle">
+                   <div class="avater-wrapper">
+                     <img src="/week8-learning/assets/avatar-2-469c3734.png" alt="avatar-2" class="avater avater-md">
+                     <p class="text-gray-80">Kelly Hsu</p>
+                   </div>
+                   <div class="card-rounded-price">
+                     <h6 class="card-rounded-price-title text-primary-100">NT$ 2,480</h6>
+                     <div class="card-rounded-price-subtitle text-gray-60">NT$ 3,200</div>
+                   </div>
+                 </div>
+               </div>
+               <div class="card-rounded-footer">
+                 <div class="card-rounded-start">
+                   <div class="card-rounded-badge-disable text-gray-70 bg-gray-40">程式開發</div>
+                   <div class="card-rounded-text">已有 420 位同學加入</div>
+                 </div>
+                 <div class="iconstar-wrapper">
+                   <i class="bi bi-star-fill iconstar-img iconstar-warning" ></i>
+                   <p class="iconstar-text">4.0 <span class="iconstar-text-gray">(333)</span></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </section>
+   
     <footer class=" py-10 py-lg-12 bg-gray-100 mt-12 rounded-top-5 w-100 px-8 px-lg-0">
     <div class="container">
         <div class="row justify-content-between align-items-end mb-10 mb-lg-6">
@@ -555,7 +714,8 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       // // 控制顯示/隱藏第二層選單
       // document.getElementById("show-second-menu").addEventListener("click", function() {
@@ -610,6 +770,22 @@
             document.getElementById("third-menu").style.display = "none";
           }
       });
+    </script>
+    <script>
+      document.getElementById('scrollRight').addEventListener('click', function() {
+        var container = document.getElementById('scrollContainer');
+        var scrollAmount = container.querySelector('a').offsetWidth * 2; // 移動兩個按鈕的寬度
+        // 更改 icon 顏色
+        var icon = document.getElementById('scrollRight');
+        icon.classList.add('bg-primary-100','text-white');
+        icon.classList.remove('text-gray-80');
+        container.scrollLeft += scrollAmount;
+        // 動畫完成後恢復原本顏色
+        setTimeout(function() {
+          icon.classList.remove('bg-primary-100','text-white');
+          icon.classList.add('text-gray-80');
+        }, 500); // 0.5秒後移除顏色
+        });
     </script>
   </body>
 </html>
