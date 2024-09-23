@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script type="module" crossorigin src="/week8-learning/assets/main-87037307.js"></script>
-    <link rel="stylesheet" href="/week8-learning/assets/main-e352474e.css">
+    <script type="module" crossorigin src="/week8-learning/assets/main-21af71ed.js"></script>
+    <link rel="stylesheet" href="/week8-learning/assets/main-2d423dce.css">
   </head>
   <body class="bg-gray-10">
-    <nav class=" navbar navbar-expand-lg  pt-lg-10 pb-lg-6 p-0">
+    <nav id="navbar" class=" navbar navbar-expand-lg  pt-lg-10 pb-lg-6 p-0 fixed-top">
     <div class="container-fluid p-5 py-lg-6 px-lg-10 bg-white nav-bg-shadow nav-rounded" style="max-width:1296px ;">
       <div class="d-flex align-items-center justify-content-between w-100">
         <div class="d-flex align-items-center">
@@ -477,7 +477,22 @@
       </div>
       
     </div>
-  </nav>    <div class="banner swiper mySwiper mb-lg-11 h-400">
+  </nav>
+
+  <script>
+    window.onscroll = function() {stickyNavbar()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyNavbar() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("fixed-top");
+      } else {
+        navbar.classList.remove("fixed-top");
+      }
+    }
+  </script>    <div class="banner swiper mySwiper mb-lg-11 h-400">
       <div class="swiper-wrapper">
         <div class="swiper-slide position-relative swiper-flower w-sm-100">
           <img src="/week8-learning/assets/hero-1-48e9b6b0.png" alt="hero-1" class="mx-auto" />

@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script type="module" crossorigin src="/week8-learning/assets/main-87037307.js"></script>
-    <link rel="stylesheet" href="/week8-learning/assets/main-e352474e.css">
+    <script type="module" crossorigin src="/week8-learning/assets/main-21af71ed.js"></script>
+    <link rel="stylesheet" href="/week8-learning/assets/main-2d423dce.css">
   </head>
   <body>
-    <nav class=" navbar navbar-expand-lg  pt-lg-10 pb-lg-6 p-0">
+    <nav id="navbar" class=" navbar navbar-expand-lg  pt-lg-10 pb-lg-6 p-0 fixed-top">
     <div class="container-fluid p-5 py-lg-6 px-lg-10 bg-white nav-bg-shadow nav-rounded" style="max-width:1296px ;">
       <div class="d-flex align-items-center justify-content-between w-100">
         <div class="d-flex align-items-center">
@@ -476,7 +476,22 @@
       </div>
       
     </div>
-  </nav>    <section class="hero bg-gray-10 flipped">
+  </nav>
+
+  <script>
+    window.onscroll = function() {stickyNavbar()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyNavbar() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("fixed-top");
+      } else {
+        navbar.classList.remove("fixed-top");
+      }
+    }
+  </script>    <section class="hero bg-gray-10 flipped">
       <div class="container py-10 py-lg-11">
         <p class="mb-6 mb-lg-10">所有課程<span class="mx-5">/</span>程式課程</p>
         <h3 class="h1-lg fw-bold mb-10">程式課程</h3>
