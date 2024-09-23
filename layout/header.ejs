@@ -1,4 +1,4 @@
-<nav class=" navbar navbar-expand-lg  pt-lg-10 pb-lg-6 p-0">
+<nav id="navbar" class=" navbar navbar-expand-lg  pt-lg-10 pb-lg-6 p-0 fixed-top">
     <div class="container-fluid p-5 py-lg-6 px-lg-10 bg-white nav-bg-shadow nav-rounded" style="max-width:1296px ;">
       <div class="d-flex align-items-center justify-content-between w-100">
         <div class="d-flex align-items-center">
@@ -463,3 +463,18 @@
       
     </div>
   </nav>
+
+  <script>
+    window.onscroll = function() {stickyNavbar()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyNavbar() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("fixed-top");
+      } else {
+        navbar.classList.remove("fixed-top");
+      }
+    }
+  </script>
